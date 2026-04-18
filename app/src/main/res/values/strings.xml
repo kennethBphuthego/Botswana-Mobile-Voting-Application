@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bw\'s Mobile Voting</string>
+    <string-array name="location">
+        <item></item>
+        <item>Molepolole-North</item>
+        <item>Molepolole-South</item>
+        <item>Molepolole-East</item>
+        <item>Molepolole-West</item>
+        </string-array>
+
+</resources>

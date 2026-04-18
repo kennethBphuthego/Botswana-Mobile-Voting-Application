@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/iec_logo"
+    android:textAlignment="center"
+    tools:context=".Home_PageActivity1"
+    tools:ignore="Overdraw">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="410dp"
+        android:layout_height="80dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="181dp"
+        android:layout_height="28dp"
+        android:gravity="bottom"
+        android:text="Bw Mobile Voting-Home"
+        android:textColor="#E1BEE7"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.134"
+        tools:ignore="HardcodedText,RtlCompat,TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Home_symbol"
+        android:layout_width="41dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="HOME"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:srcCompat="@drawable/home"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/PROFILE_symbol"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="PROFILE"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/Home_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/person_profile"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Listing_symbol"
+        android:layout_width="37dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="LISTING"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/PROFILE_symbol"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/view_list"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Count_symbol"
+        android:layout_width="47dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="COUNT"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/Listing_symbol"
+        app:srcCompat="@drawable/count"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Results_symbol"
+        android:layout_width="43dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="RESULTS"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/Count_symbol"
+        app:srcCompat="@drawable/result_data"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/Exit_symbol"
+        android:layout_width="38dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="9dp"
+        android:clickable="true"
+        android:contentDescription="EXIT"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/Results_symbol"
+        app:srcCompat="@drawable/exit"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/iec"
+        android:layout_width="400dp"
+        android:layout_height="586dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="1dp"
+        android:text="IEC(Independent Electoral Commission),this is an organisation formed to conduct fair and 'just' elections.The constitution was amended in 1997 to allow the organisation to
+take over and replace the 'office of the Supervisor of Elections'.
+                                Voting is a fundamental process in a democratic system. It is a chance for every citizen to have a leader of their ow choice.THank You."
+        android:textColor="#FBFAFA"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText,VisualLintLongText,TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="226dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="182dp"
+        android:clickable="false"
+        android:fadingEdge="none"
+        android:gravity="bottom"
+        android:text="ABOUT US"
+        android:textColor="#FAF6F6"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
